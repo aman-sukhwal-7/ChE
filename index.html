@@ -20,7 +20,7 @@
   </section>
 
   <!-- NAVBAR -->
-  <header class="lg:px-16 px-6 flex flex-wrap bg-transparent items-center lg:pt-5 py-2">
+  <header class="lg:px-16 px-6 flex flex-wrap bg-transparent items-center lg:pt-5 py-2 text-gray-200">
           <div class="flex-1 flex justify-between items-center">
                     <a href="#" class="navbar-brand text-2xl">ChESS</a>
           </div>
@@ -40,58 +40,63 @@
 
   <!-- MAIN PAGE -->
   <div class="header-overlay">
-    <div class="text-center pt-16"> 
-          <h1 class="text-5xl md:text-8xl m-5 max-w-min select-none bg-white text-black ">ChESS</h1>
-          <h2 class="text-3xl md:text-3xl m-5 bg-white text-black  select-none"><span class="type"></span></h2>
+    <div class="text-center pt-16 big-text"> 
+          <h1 class="text-5xl md:text-8xl m-5 select-none">ChESS</h1>
+          <h2 class="text-3xl md:text-3xl m-5 select-none"><span class="type"></span></h2>
+          <div class="icon"><i class="fas fa-arrow-double-down"></i></div>
     </div>
   </div>
 
 
   <!-- EVENTS-AREA -->
-  <div class="event-area" id="event">
+  <div class="event-area bg-white" id="event">
           <!-- INNER-TEXT-CONTAINER -->
           <div class="inner-text mx-5">
-              <h1 class="md:text-3xl text-2xl mb-3 pb-3 text-center"><i class="fas m-1 mx-5 md:m-5 fa-arrow-circle-left"></i>EVENTS 2020-21<i class="m-1 mx-5 md:m-5 fas fa-arrow-circle-right"></i></h1>
+              <h1 class="md:text-3xl text-2xl mb-3 pb-3 text-center"><i onclick="scrolllin()" class="fas m-1 mx-5 md:m-5 fa-arrow-circle-left"></i>EVENTS 2020-21<i onclick="scrollrin()" class="m-1 mx-5 md:m-5 fas fa-arrow-circle-right"></i></h1>
           <!-- EVENTS-CARDS -->
-              <div class="flex overflow-x-auto">
+              <div class="flex overflow-x-auto scrolll">
                   <!-- FIRST-CARD-COQ -->
-                  <div class="min-w-max shadow-lg m-5 cursor-pointer transition duration-700 transform hover:scale-105 text-center">
-                    <img src="images/coq.jpg" class="max-w-md">
-                        <div class="m-2">
-                            <h1 class="p-2 font-bold">A QUIZ EVENT </h1>
-                            <h1 class="p-2 mb-2 font-bold">3rd WEEK OF January</h1>
-                            <a href="rulecoq.docx" class="border border-black rounded-full p-2 m-2">RULEBOOK<i class=" m-2 fas fa-file-download"></i></a>   
-                            <a href="#" class="border border-black rounded-full p-2 m-2">REGISTER<i class=" m-2 fas fa-hand-peace"></i></a>   
+                  <div class="min-w-max shadow-lg m-5 cursor-pointer border border-gray-500 transition-shadow duration-300 hover:shadow-2xl text-center ease-in-out">
+                    <img src="images/coqq.jpg" class="max-w-md">
+                        <div class="m-5 p-1">
+                            <h1>A QUIZ EVENT<BR>First and second year only</h1>
+                            <h1 class="mb-2">MID JANUARY</h1>
+                            <hr>
+                            <a href="rulecoq.docx" class="mr-6">RULEBOOK<i class=" m-1 fas fa-file-download"></i></a>   
+                            <a href="#">REGISTER<i class=" m-1 fas fa-hand-peace"></i></a>   
                           </div>
-                 </div>
+                  </div>
                  <!-- ASK ME ANYTHING -->
-                <div class="min-w-max shadow-lg m-5 cursor-pointer transition duration-700 transform hover:scale-105 text-center">
-                  <img src="images/coq.jpg" class="max-w-md">
-                      <div class="m-2">
-                          <h1 class="p-2 font-bold">BEST MENTORING SESSION</h1>
-                          <h1 class="p-2 mb-2 font-bold">MID-FEB</h1>
-                          <a href="rulecoq.docx" class="border border-black rounded-full p-2 m-2">RULEBOOK<i class=" m-2 fas fa-file-download"></i></a>   
-                          <a href="#" class="border border-black rounded-full p-2 m-2">REGISTER<i class=" m-2 fas fa-hand-peace"></i></a>   
+                 <div class="min-w-max shadow-lg m-5 cursor-pointer border border-gray-500 transition-shadow duration-300 hover:shadow-2xl text-center ease-in-out">
+                  <img src="images/ama.jpg" class="max-w-md">
+                      <div class="m-5 p-1">
+                          <h1>INTERACTIVE SESSION WITH <br> SENIORS & FACULTIES</h1>
+                          <h1 class="mb-2">FEB END</h1>
+                          <hr>
+                          <a href="rulecoq.docx" class="mr-6">RULEBOOK<i class=" m-1 fas fa-file-download"></i></a>   
+                          <a href="#">REGISTER<i class=" m-1 fas fa-hand-peace"></i></a>   
                         </div>
                 </div>
                 <!-- CHEM-E-CAR -->
-                <div class="min-w-max shadow-lg m-5 cursor-pointer transition duration-700 transform hover:scale-105 text-center">
-                  <img src="images/coq.jpg" class="max-w-md">
-                      <div class="m-2">
-                          <h1 class="p-2 font-bold">CREATE YOUR OWN TOY CAR<BR>BY USING CHEMICAL ENERGY</h1>
-                          <h1 class="p-2 mb-2 font-bold">SPHINX</h1>
-                          <a href="rulecoq.docx" class="border border-black rounded-full p-2 m-2">RULEBOOK<i class=" m-2 fas fa-file-download"></i></a>   
-                          <a href="#" class="border border-black rounded-full p-2 m-2">REGISTER<i class=" m-2 fas fa-hand-peace"></i></a>   
+                <div class="min-w-max shadow-lg m-5 cursor-pointer border border-gray-500 transition-shadow duration-300 hover:shadow-2xl text-center ease-in-out">
+                  <img src="images/cec.jpg" class="max-w-md">
+                      <div class="m-5 p-1">
+                          <h1>CREATE YOUR OWN TOY CAR<BR>BY USING CHEMICAL ENERGY</h1>
+                          <h1 class="mb-2">DURING SPHINX</h1>
+                          <hr>
+                          <a href="rulecoq.docx" class="mr-6">RULEBOOK<i class=" m-1 fas fa-file-download"></i></a>   
+                          <a href="#">REGISTER<i class=" m-1 fas fa-hand-peace"></i></a>   
                         </div>
                 </div>
                 <!-- CHEM-A-THON-->
-                <div class="min-w-max shadow-lg m-5 cursor-pointer transition duration-700 transform hover:scale-105 text-center">
-                  <img src="images/coq.jpg" class="max-w-md">
-                      <div class="m-2">
-                          <h1 class="p-2 font-bold">INTERCOLLEGE-QUIZ EVENT</h1>
-                          <h1 class="p-2 mb-2 font-bold">SPHINX</h1>
-                          <a href="rulecoq.docx" class="border border-black rounded-full p-2 m-2">RULEBOOK<i class=" m-2 fas fa-file-download"></i></a>   
-                          <a href="#" class="border border-black rounded-full p-2 m-2">REGISTER<i class=" m-2 fas fa-hand-peace"></i></a>   
+                <div class="min-w-max shadow-lg m-5 cursor-pointer border border-gray-500 transition-shadow duration-300 hover:shadow-2xl text-center ease-in-out">
+                  <img src="images/cat.jpg" class="max-w-md">
+                      <div class="m-5 p-1">
+                          <h1>3 STAGE<BR>INTERCOLLEGE QUIZ EVENT</h1>
+                          <h1 class="mb-2">DURING SPHINX</h1>
+                          <hr>
+                          <a href="rulecoq.docx" class="mr-6">RULEBOOK<i class=" m-1 fas fa-file-download"></i></a>   
+                          <a href="#">REGISTER<i class=" m-1 fas fa-hand-peace"></i></a>   
                         </div>
                 </div>
               </div>
