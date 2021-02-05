@@ -15,3 +15,11 @@ var typed = new Typed('.type', {
     loop: true
   });
 
+function scrollrin() {
+    var scrol = document.querySelector('.scrolll')  
+    scrol.scrollBy(350, 0);
+  }
+function scrolllin() {
+    var scrol = document.querySelector('.scrolll')  
+    scrol.scrollBy(-350, 0);
+  } 
