@@ -46,12 +46,13 @@ body
 .header-overlay
 {
     z-index: 0;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100vh;
     color: var(--heading-color);
+    text-align: center;
 }
+
+
 .event-area
 {   top: 0;
     left: 0;
@@ -59,15 +60,6 @@ body
     width: 100%;
     min-height: max-content;
     z-index: 0;    
-}
-.scrolll
-{
-    scroll-behavior: smooth;
-}
-.scrolll::-webkit-scrollbar {
-    display: none;
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
 }
 .event-area a 
 {
@@ -83,16 +75,28 @@ body
     padding: 0.5rem;
     font-weight: bold;
 }
-
+.event-area hr
+{
+    border: gray 0.5px solid;
+    margin-bottom: 1.2rem;
+}
+.scrolll
+{
+    scroll-behavior: smooth;
+}
+.scrolll::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
 .stick
 {
     position: sticky;
     top: 0;
     z-index: 1;
-    background: rgba( 0, 0,0, 0.25 );
+    background:var(--body-color);
+    color: var(--text-color);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
     transition-duration: 0.7s; 
     padding-top: 0.3rem;
 }
@@ -108,11 +112,7 @@ body
     height: 700px;
     z-index: 1;
   }
-hr
-{
-    border: gray 0.5px solid;
-    margin-bottom: 1.2rem;
-}
+
 .Contact-area
 {
     position: relative;
