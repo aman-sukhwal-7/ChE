@@ -1,8 +1,8 @@
+alert("You are seeing the Alpha Version of the website..Beta version include full chat assistance specially for Chemical Engineering Students");
 window.addEventListener("scroll", function() {
     var header = document.querySelector("header");
     header.classList.toggle("stick",window.scrollY > 0);
 });
-
 
 var typed = new Typed('.type', {
     strings: [
